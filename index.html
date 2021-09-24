@@ -4,10 +4,213 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet"  >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>The Boss Domain</title>
 </head>
 <body>
+    <div class="hero">
+        <nav>
+            <div class="logo">
+                <img src="./Whitneylogo-removebg-preview.png" alt="">
+            </div>
+            <div class="hamburger-container">
+                <i class="bi bi-list" onclick="showSidebar()"></i>
+                <span class="cart">Cart(0)</span>
+            </div>
+        </nav>
+
+        <div id="sidebar">
+            <div class="sidebar-header">
+                <img src="./Whitneylogo-removebg-preview.png" alt="">
+                <i class="bi bi-x" onclick="showSidebar()"></i>
+            </div> 
+            <div class="sidebar-content">
+                <ul class="navlinks">
+                    <li>Home</li>
+                    <li>About Me
+                        <ul class="sub-list">
+                            <li>Whitney's Reading list</li>
+                        </ul>
+                    </li>
+                    <li>Work with me</li>
+                    <li>Buy Workbooks</li>
+                    <li>Contact Me</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <p class="intro">
+                Hi, I'm Whitney Akinyi
+            </p>
+            <p class="below-intro" >
+                You ended up in the right place. If you're a driven woman, I can help you achieve your ambitions. You can be anything, Do anything.
+            </p>
+            <button type="button" class="btn cta-button btn-lg">Meet Your Guide</button>
+        </div>
+    </div>
+
+    <main>
+        <div class="main-section">
+            <p>BUY WORKBOOKS</p>
+            <p>LOOKING FOR ACTION STEPS THAT WILL GIVE YOU RESULTS?<p>
+            <P>I created something for you, beautiful Work Books all made with YOU in mind.</P>
+        </div>
+        <div class="workbooks">
+            <div class="workbook">
+                <img src="./bossplanner.jpg" alt="">
+                <span>Level Up Book</span>
+                <span>1500KSHS</span>
+            </div>
+            <div class="workbook">
+                <img src="./bossplanner2.jpg" alt="">
+                <span>Level Up Book</span>
+                <span>1500KSHS</span>
+            </div>
+        </div>     
+    </main>
+
+    <div class="coaching-section-wrapper">
+        <div class="coaching-section">
+            <div class="content">
+                <p style="font-size: 22px;">ONE ON ONE COACHING</p>
+                <div>
+                    <p style="font-size: 14px; margin-bottom: 3px; font-weight: 600;">I CAN HELP UNLOCK YOUR POTENTIAL</p>
+                    <P style="font-size: 14px;">Let me help you discover WHO you are and WHO you want to become</P>
+                </div>
+                <button type="button" class="btn cta-button learn-more btn-lg">LEARN MORE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="expectations-wrapper">
+        <p>What to Expect in Our Programs</p>
+
+        <div class="expectations">
+            <div class="expectations-content">
+                <div class="expectation">
+                    <i class="bi bi-eye"></i>
+                    <span>VISION DEVELOPMENT</span>
+                </div>
+                <div class="expectation">
+                    <i class="bi bi-bullseye"></i>
+                    <span>MINDSET MAKEOVERS</span>
+                </div>
+                <div class="expectation">
+                    <i class="bi bi-chat-left"></i>
+                    <span>ACOUNTABILITY BUDDY</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="coaching-section-wrapper women">
+        <div class="coaching-section women">
+            <div class="content">
+                <p style="font-size: 22px;">"LA BELLE VIE" GROUP COACHING</p>
+                <div>
+                    <p style="font-size: 14px; margin-bottom: 3px; font-weight: 600;">ARE YOU READY TO TRANSFORM YOUR LIFE?</p>
+                    <P style="font-size: 14px;">Unlock your full potential and live a more fulfiling life by tapping into the power within you. Alongside a community of other like minded women</P>
+                </div>
+                <button type="button" class="btn cta-button learn-more btn-lg">LET'S LEVEL UP</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="expectations-wrapper">
+        <p>I have been Featured In</p>
+
+        <div class="expectations">
+            <div class="expectations-content brands">
+                <div class="expectation brand">
+                   <img src="./True-Love_logo.png" alt="">
+                </div>
+                <div class="expectation brand">
+                    <img src="./dailynationlogo.png" alt="">
+                </div>
+                <div class="expectation brand">
+                    <img src="./switch-tvlogo-removebg-preview.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="paralax">
+        <div class="hero-content">
+            <p class="intro">
+                Book me for speaking
+            </p>
+            <p class="below-intro" >
+               The right Words have the power to transform lives. Are you looking for a charisma & self development. I am available for keynote, panels and presentations .
+            </p>
+            <button type="button" class="btn cta-button btn-lg">BOOK NOW</button>
+        </div>
+    </div>
+
+    <main>
+        <div class="main-section">
+            <p>FREE RESOURCES</p>
+            <p>HIGH ON AMBITION BOOK CLUB<p>
+            <P style="font-weight: 600;">READY TO TRANSFORM YOUR MINDSET?</P>
+            <P>Let's read & discuss self development and business books together</P>
+
+            <button type="button" class="btn cta-button btn-lg">BECOME A MEMBER</button>
+        </div>
+    </main>
+
+    <div class="expectations-wrapper">
+        <p class="intro clients">What Clients Are Saying </p>
+
+        <div class="expectations">
+            <div class="expectations-content">
+                <div class="reviews">
+                    <div class="hero-content client-reviews">
+                        <p class="below-intro client" >
+                        " Because normal diary is soo boring and I wanted something that looks good and enticing to write on. I chose the Boss Planner because of how detailed it is. Wwhen you have a blank paper you wont know what to put in, but when you have different categories it's so easier to journal and plan your day. "
+                        </p>
+                       
+                    </div>
+                </div>
+            
+                <div class="reviews">
+                    <div class="hero-content client-reviews">
+                        <p class="below-intro client" >
+                        " Because normal diary is soo boring and I wanted something that looks good and enticing to write on. I chose the Boss Planner because of how detailed it is. Wwhen you have a blank paper you wont know what to put in, but when you have different categories it's so easier to journal and plan your day. "
+                        </p>
+                       
+                    </div>
+                </div>
+            
+                <div class="reviews">
+                    <div class="hero-content client-reviews">
+                        <p class="below-intro client" >
+                         "Because normal diary is soo boring and I wanted something that looks good and enticing to write on. I chose the Boss Planner because of how detailed it is. Wwhen you have a blank paper you wont know what to put in, but when you have different categories it's so easier to journal and plan your day."
+                        </p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+
+    <div class="newsletter-wrapper">
+        <p>Newsletter</p>
+        <p>Subscribe for updates</p>
+        <form action="">
+            <div class="form-group">
+                <input type="email" class="form-control" id="newsletter-email" aria-describedby="emailHelp" placeholder="email@example.com">
+                <button><i class="bi bi-arrow-right"></i></button>
+            </div>
+          
+        </form>
+    </div>
     
+   
+   
+
+
+    <script src="main.js"></script>
 </body>
 </html>

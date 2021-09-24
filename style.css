@@ -1,8 +1,376 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=DM+Sans&display=swap');
 
+html {
+    scroll-behavior: smooth;
+  }
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+}
+ul{
+    list-style: none;
+}
+button{
+    border-radius: 2px;
+}
+
+.hero{
+    background: url('./Whitney.jpg');
+    background: linear-gradient(rgba(19, 18, 18, 0.3), rgba(27, 27, 27, 0.3)), url('./Whitney.jpg');  /* Chrome 10-25, Safari 5.1-6 */
+    background-position: center;
+    background-size: cover;
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    color: #ffffff;
+}
+.logo img {
+    width: 100px;
+}
+.hamburger-container {
+    font-size: 16px;
+    width: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.hamburger-container .bi-list{
+    font-size: 30px;
+}
+.hero-content{
+    width: 85%;
+    margin: auto;
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+.intro{
+    font-family: 'Bonheur Royale', cursive;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.cta-button {
+    background-color: #455744;
+    color: #ffffff;
+    border-radius: 2px;
+    padding: 0.5rem 3rem;
+}
+
+#sidebar{
+    height: 450px;
+    /* padding: 0 2rem; */
+  
+    width: 0;
+    background-color: azure;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 33;
+    transition: 0.3s;
+}
+#sidebar.active{
+    width: 275px;
+    padding: 0 2rem;
+   
+ 
+}
+.sidebar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar-header img {
+    width: 90px;
+}
+.sidebar-header .bi-x{
+    font-size: 26px;
+}
+.sidebar-content {
+    font-size: 22px;
+    font-weight: 400;
+}
+.sidebar-content .navlinks{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.sub-list{
+    background-color: lightgray;
+    font-size: large;
+}
+
+main{
+    width: 85%;
+    margin: 4rem auto;
+    text-align: center;
+    font-weight: 400;
+}
+.main-section p:nth-child(1){
+    font-size: 12px;
+}
+.main-section p:nth-child(2){
+    font-size: 22px;
+}
+.main-section p:nth-child(3){
+    font-size: 14px;
+}
+
+.workbooks{
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    margin: 4rem;
+}
+.workbooks img{
+    width: 190px;
+}
+.workbook{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 330px;
+}
+.workbook span:nth-child(1){
+    font-size: 14px;
+}
+.workbook span:nth-child(2){
+    font-size: 17px;
+}
+
+
+.coaching-section{
+    background: url('./Whitney.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 340px;
+    display: grid;
+}
+.coaching-section.women{
+    background: url('./women.jpg');
+}
+.coaching-section-wrapper{
+    width: 100%;
+}
+.coaching-section .content{
+    background-color: #ffffff;
+    width: 85%;
+    margin: auto;
+    padding: 1rem;
+}
+.cta-button.learn-more{
+    border-radius: 2px;
+    padding: 10px 1rem;
+}
+.expectations-wrapper{
+    width: 85%;
+    margin: 5rem auto;
+    text-align: center;
+}
+.expectations-wrapper p{
+    font-size: 22px;
+    margin-bottom: 4rem;
+}
+.expectations-content{
+    display: flex;
+    justify-content: space-evenly;
+    overflow: scroll;
+    width: 50rem;
+}
+.expectations{
+    overflow: scroll;
+}
+.expectation{
+    display: flex;
+    flex-direction: column;
+}
+.expectation .bi{
+    font-size: 50px;
+}
+.expectation span{
+    font-size: 22px;
+}
+.expectations-content.brands{
+    display: flex;
+    align-items: center;
+}
+
+.expectation.brand img{
+    width: 10rem;
+}
+.paralax{
+    background: linear-gradient(rgba(19, 18, 18, 0.3), rgba(27, 27, 27, 0.3)), url('./Whitney2.jpg');  /* Chrome 10-25, Safari 5.1-6 */
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+}
+.hero-content.client-reviews{
+    color: black;
+}
+.intro.clients{
+    margin-bottom: 1rem;
+    font-size: 30px;
+}
+.below-intro.client{
+    font-size: 20px;
+}
+
+.newsletter-wrapper{
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.newsletter-wrapper p{
+    margin-bottom: 0;
+}
+.newsletter-wrapper p:nth-child(1){
+    font-size: 24px;
+}
+.newsletter-wrapper form{
+    margin: 1rem;
+}
+
+.newsletter-wrapper input{
+    border-radius: inherit;
+    border-color: black;
+    outline: black;
+}
+.newsletter-wrapper input[type="email"]
+{
+    width: 75%;
+    display: inline-block;
+}
+.newsletter-wrapper button
+{
+    font-size: larger;
+    position: relative;
+    display: inline-block;
+    left: -3px;
+    width: 22%;
+    height: 38px;
+    background-color: black;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.newsletter-wrapper .bi-arrow-right{
+    font-size: larger;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:417px){
+    .hero{
+        height: 500px;
+    }
+}
+
+
+@media only screen and (min-width: 600px){
+    .hero{
+        height: 900px;
+    }
+
+}
+@media only screen and (min-width: 768px){
+    body{
+        font-size: 18px;
+    }
+    .hero-content {
+        top: 203px;
+    }
+    .hero-content.client-reviews{
+        top: 0;
+    }
+    .hero{
+        font-size: 40px;
+    }
+    .cart{
+        font-size: 22px;
+    }
+    .logo img {
+        width: 120px;
+    }
+    .workbooks{
+        flex-direction: row;
+        height: 390px;
+    }
+    .coaching-section-wrapper{
+        width: 85%;
+        margin: auto;
+        position: relative;
+    }
+    .coaching-section{
+        width: 70%;
+    }
+    .coaching-section .content{
+        position: absolute;
+        left: 13rem;
+        top: 5rem;
+        width: 24rem;
+    }
+    .paralax .hero-content{
+        top: 87px;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .hero{
+        height: 1200px;
+    }
+    .hero-content {
+        top: 300px;
+        width: 65%;
+    }
+    .main{
+        margin: 9rem auto;
+    }
+    .workbooks{
+        height: 470px;
+    }
+    .workbook{
+        height: 440px;
+    }
+    .workbook img{
+        width: 255px;
+    }
+    .coaching-section-wrapper{
+        margin: 8rem auto;
+    }
+    .coaching-section {
+        height: 510px;
+    }
+    .coaching-section .content{
+        left: 29rem;
+        top: 6rem;
+    }
 }
