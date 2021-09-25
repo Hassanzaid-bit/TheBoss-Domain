@@ -38,6 +38,9 @@ nav {
     margin: auto;
     color: #ffffff;
 }
+#nav-links{
+    display: none;
+}
 .logo img {
     width: 100px;
 }
@@ -319,6 +322,7 @@ footer{
     padding: 2rem;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     
 }
 
@@ -519,5 +523,17 @@ footer{
     .coaching-section .content{
         left: 29rem;
         top: 6rem;
+    }
+    .hamburger-container{
+        width: auto;
+    }
+    #nav-links{
+        display: flex;
+        justify-content: space-evenly;
+        width: 33rem;
+        font-size: 14px;
+    }
+    #hamburger{
+        display: none;
     }
 }
