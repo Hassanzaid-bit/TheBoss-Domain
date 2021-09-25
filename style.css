@@ -60,6 +60,7 @@ nav.active{
     position: fixed;
     width: 100%;
     z-index: 55;
+    color: black ;
 }
 .navbar-wrapper.scrolled .cart,.cart-icon, #hamburger{
     color: black;
@@ -67,6 +68,34 @@ nav.active{
 
 #nav-links{
     display: none;
+}
+#nav-links li{
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+
+.trigger-dropdown{
+    position: relative;
+}
+
+.trigger-dropdown ul{
+    position: absolute;
+    background-color: #ffffff;
+    display: none;
+    color: black;
+    padding: 1rem;
+    width: 18rem;
+    border: 1px solid black;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.trigger-dropdown ul li{
+    cursor: pointer;
+}
+.trigger-dropdown:hover ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .cart-icon{
     display: none;
@@ -571,5 +600,9 @@ footer{
     }
     .cart{
         display: none;
+    }
+    
+    .navbar-wrapper.scrolled #nav-links{
+        color: black;
     }
 }
