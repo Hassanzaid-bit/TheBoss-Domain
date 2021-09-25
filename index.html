@@ -11,12 +11,12 @@
 </head>
 <body>
     <div class="hero">
-        <nav>
+        <nav id="navbar">
             <div class="logo">
                 <img src="./Whitneylogo-removebg-preview.png" alt="">
             </div>
             <div class="hamburger-container">
-                <i class="bi bi-list" onclick="showSidebar()"></i>
+                <i class="bi bi-list" id="hamburger" ></i>
                 <span class="cart">Cart(0)</span>
             </div>
         </nav>
@@ -25,22 +25,39 @@
         <div id="sidebar">
             <div class="sidebar-header">
                 <img src="./Whitneylogo-removebg-preview.png" alt="">
-                <i class="bi bi-x" onclick="showSidebar()"></i>
+                <i class="bi bi-x" id="close-sidebar" ></i>
             </div> 
-            <div class="sidebar-content">
-                <ul class="navlinks">
-                    <li>Home</li>
-                    <li>About Me
-                        <ul class="sub-list">
-                            <li>Whitney's Reading list</li>
+            <div class="sidebar-contentbox-wrapper"> 
+                <div class="sidebar-contentbox">
+                    <div>Home</div>
+                </div>
+                <div class="sidebar-contentbox">
+                    <div class="sidebar-label">About Me</div>
+                    <div class="sidebar-content">
+                        <p>Whitney's Reading list</p>
+                    </div>
+                </div>
+                <div class="sidebar-contentbox">
+                    <div class="sidebar-label">Work With Me</div>
+                    <div class="sidebar-content">
+                        <ul>
+                            <li>Join the High On Ambition Book Club</li>
+                            <li>One on One Coaching</li>
+                            <li>"La Belle Vie" Group Coaching</li>
+                            <li>Book Me For Speaking</li>
                         </ul>
-                    </li>
-                    <li>Work with me</li>
-                    <li>Buy Workbooks</li>
-                    <li>Contact Me</li>
-                </ul>
+                    </div>
+                </div>
+                <div class="sidebar-contentbox">
+                    <div>Buy Workbooks</div>
+                </div>
+                <div class="sidebar-contentbox">
+                    <div>Contact Me</div>
+                </div>
             </div>
         </div>
+
+       
 
         <div class="hero-content">
             <p class="intro">
@@ -213,7 +230,7 @@
                 <img src="./Whitneylogo-removebg-preview.png" alt="">
             </div>
             <ul class="footer-nav">
-                <li class="footer-dropdown" id="footer-dropdown-id" onclick="myfunction()" >Footer menu </li>
+                <li class="footer-dropdown" id="footer-dropdown-id" >Footer menu </li>
                 <ul class="footer-dropdown-content" id="footer-dropdown-content">
                     <li>About Me</li>
                     <li>Contact Me</li>
@@ -245,6 +262,7 @@
         </div>
     </footer>
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>

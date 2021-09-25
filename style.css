@@ -28,7 +28,6 @@ button{
     background-position: center;
     background-size: cover;
     height: 430px;
-    position: relative;
     overflow: hidden;
 }
 nav {
@@ -74,12 +73,10 @@ nav {
 }
 
 #sidebar{
-    height: 450px;
-    /* padding: 0 2rem; */
-  
+    height: 100vh;  
     width: 0;
     background-color: azure;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     z-index: 33;
@@ -102,19 +99,55 @@ nav {
 .sidebar-header .bi-x{
     font-size: 26px;
 }
-.sidebar-content {
+.sidebar-contentbox-wrapper {
     font-size: 22px;
     font-weight: 400;
+    position: relative;
+    top: 2rem;
 }
-.sidebar-content .navlinks{
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+.sidebar-content {
+    font-size: 16px;
+
 }
 .sub-list{
     background-color: lightgray;
     font-size: large;
+}
+.sidebar-contentbox{
+    position: relative;
+    margin-bottom: 1rem;
+}
+.sidebar-contentbox .sidebar-label{
+    position: relative;
+    color: black;
+    cursor: pointer;
+    overflow: hidden;
+}
+.sidebar-contentbox .sidebar-label::before{
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    transition: 0.5s;
+    font-size: 1.5rem;
+}
+.sidebar-contentbox.active .sidebar-label::before{
+    content: "-";
+}
+
+.sidebar-contentbox .sidebar-content{
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.sidebar-contentbox.active .sidebar-content{
+    height: auto;
+    padding-left: 1rem;
+    transition: 0.5s;
+
 }
 
 main{

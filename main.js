@@ -1,19 +1,29 @@
-
-const sidebar = document.getElementById("sidebar");
-const link = document.getElementById("footer-dropdown-id")
-
-const dropdownContent = document.getElementById("footer-dropdown-content")
-
 // const height = document.getElementsByTagName("nav").height();
 
 // console.log(height)
 
+$(document).ready(() =>
+{
+    /* sidebar */
+    $("#hamburger").click(() =>
+    {
+        $("#sidebar").toggleClass("active");
+    })
+    $("#close-sidebar").click(() =>
+    {
+        $("#sidebar").toggleClass("active");
+    })
 
-function showSidebar(){
-    sidebar.classList.toggle("active")
-}
+    function sidebarToggle(){
+        $(this).toggleClass("active")
+    }
+    $(".sidebar-contentbox").click(sidebarToggle)
 
-function myfunction(){
-    link.classList.toggle("expanded")
-    dropdownContent.classList.toggle("dropdown-active")
-}
+    $("#footer-dropdown-id").click(()=>
+    {
+        $("#footer-dropdown-id").toggleClass("expanded");
+        $("#footer-dropdown-content").toggleClass("dropdown-active")
+    })
+
+
+})
