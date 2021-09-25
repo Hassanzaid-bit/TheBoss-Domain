@@ -38,7 +38,37 @@ nav {
     margin: auto;
     color: #ffffff;
 }
+nav.active{
+    background-color: #ffffff;
+    position: fixed;
+}
+/* 
+.fixed{
+    position: fixed;
+    background-color: #ffffff;
+    width: 100%;
+    top: 0;
+    z-index: 50;
+    color: black;
+    transition: 0.5s;
+} */
+
+
+
+.navbar-wrapper.scrolled{
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+    z-index: 55;
+}
+.navbar-wrapper.scrolled .cart,.cart-icon, #hamburger{
+    color: black;
+}
+
 #nav-links{
+    display: none;
+}
+.cart-icon{
     display: none;
 }
 .logo img {
@@ -82,7 +112,7 @@ nav {
     position: fixed;
     top: 0;
     right: 0;
-    z-index: 33;
+    z-index: 80;
     transition: 0.3s;
 }
 #sidebar.active{
@@ -534,6 +564,12 @@ footer{
         font-size: 14px;
     }
     #hamburger{
+        display: none;
+    }
+    .cart-icon{
+        display: flex;
+    }
+    .cart{
         display: none;
     }
 }

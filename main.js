@@ -4,6 +4,23 @@
 
 $(document).ready(() =>
 {
+
+
+    const height =  $("nav").height();
+    
+    // $(window).scroll(()=>
+    // {
+    //     if($(this).scrollTop() > height)
+    //     {
+    //         $("nav").toggleClass("active")
+    //     }
+    // })
+
+    $(window).scroll(()=>
+    {
+        $(".navbar-wrapper").toggleClass("scrolled", $(this).scrollTop() > 50)
+    })
+
     /* sidebar */
     $("#hamburger").click(() =>
     {
